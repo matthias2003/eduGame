@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <cstdlib>
 
 void Character() {
 
@@ -27,8 +26,22 @@ void Menu() {
     int input;
     std::cin >> input;
     switch (input) {
+        case 0:
+            Character();
+            break;
+        case 1:
+            Arena();
+            break;
+        case 2:
+            Tavern();
+            break;
+        case 3:
+            Story();
+            break;
         case 4:
             exit(123);
+            break;
+
     }
 }
 
