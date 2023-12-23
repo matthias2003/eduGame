@@ -43,13 +43,15 @@ MyCharacter Intro() {
         std::cout << "You have " << points << " points." << std::endl;
         std::cout << "How much points you want to spend on " << statsNames[loop] << ": ";
         std::cin >> stat;
-        stats[loop] = stats[loop] + stat;
-        points = points - stat;
-        if (loop == 4) {
-            loop = 0;
-        }
-        else {
-            loop++;
+        if (stat <= points) {
+            stats[loop] = stats[loop] + stat;
+            points = points - stat;
+            if (loop == 4) {
+                loop = 0;
+            }
+            else {
+                loop++;
+            }
         }
     }
     MyCharacter person(name, stats[0], stats[1], stats[2], stats[3], stats[4]);
