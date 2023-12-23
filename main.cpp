@@ -15,6 +15,14 @@ public:
         this->defense = defense;
         this->luck = luck;
     }
+    void showStats() {
+        std::cout << "Name: " << this->name << std::endl;
+        std::cout << "Power: " << this->power << std::endl;
+        std::cout << "Agility: " << this->agility << std::endl;
+        std::cout << "Health: " << this->health << std::endl;
+        std::cout << "Defense: " << this->defense << std::endl;
+        std::cout << "Luck: " << this->luck << std::endl;
+    }
 };
 
 MyCharacter Intro() {
@@ -25,6 +33,10 @@ MyCharacter Intro() {
     int stat = 0;
     int loop = 0;
     std::vector<std::string> statsNames = { "Power","Agility","Health","Defense","Luck" };
+    std::cout << "It's time to customize your character! You can spend points on this stats: " << std::endl;
+    for (auto tmp:statsNames) {
+        std::cout << tmp << std::endl;
+    }
     std::vector<int> stats = {1,1,1,1,1};
     while(points > 0) {
         
@@ -45,12 +57,7 @@ MyCharacter Intro() {
 }
 
 void Character(MyCharacter person) {
-    std::cout << "Name: " << person.name << std::endl;
-    std::cout << "Power: " << person.power << std::endl;
-    std::cout << "Agility: " << person.agility << std::endl;
-    std::cout << "Health: " << person.health << std::endl;
-    std::cout << "Defense: " << person.defense << std::endl;
-    std::cout << "Luck: " << person.luck << std::endl;
+    person.showStats();
 }
 
 void Arena() {
