@@ -16,6 +16,7 @@ public:
         this->luck = luck;
     }
     void showStats() {
+        std::cout << std::endl;
         std::cout << "Name: " << this->name << std::endl;
         std::cout << "Power: " << this->power << std::endl;
         std::cout << "Agility: " << this->agility << std::endl;
@@ -33,13 +34,14 @@ MyCharacter Intro() {
     int stat = 0;
     int loop = 0;
     std::vector<std::string> statsNames = { "Power","Agility","Health","Defense","Luck" };
+    std::cout << std::endl;
     std::cout << "It's time to customize your character! You can spend points on this stats: " << std::endl;
-    for (auto tmp:statsNames) {
+    for (auto tmp : statsNames) {
         std::cout << tmp << std::endl;
     }
-    std::vector<int> stats = {1,1,1,1,1};
-    while(points > 0) {
-        
+    std::vector<int> stats = { 1,1,1,1,1 };
+    while (points > 0) {
+
         std::cout << "You have " << points << " points." << std::endl;
         std::cout << "How much points you want to spend on " << statsNames[loop] << ": ";
         std::cin >> stat;
@@ -58,8 +60,39 @@ MyCharacter Intro() {
     return person;
 }
 
-void Character(MyCharacter person) {
+int Character(MyCharacter person) {
     person.showStats();
+
+    bool again = true;
+    int input = 0;
+    std::vector<std::string> options = { "Add stats","Back" };
+    while (again) {
+        again = false;
+        std::cout << std::endl;
+        for (int i = 0; i < 2; i++) {
+            std::cout << i + 1 << " -> " << options[i] << std::endl;
+        }
+        std::cout << "Your choice:";
+        std::cin >> input;
+        switch (input)
+        {
+        case 1:
+            std::cout << "Tu bedzie dodawanie statystyk" << std::endl;
+            return false;
+            break;
+        case 2:
+            return true;
+            break;
+        default:
+            again = true;
+            std::cout << "Wrong choice!" << std::endl;
+            break;
+        }
+    }
+}
+
+void Story() {
+
 }
 
 void Arena() {
@@ -70,35 +103,34 @@ void Tavern() {
 
 }
 
-void Story() {
 
-}
 
 void Menu(MyCharacter person) {
-    std::vector<std::string> options = { "Character","Arena","Tavern","Story","Exit" };
-    for (int i = 0; i < 5; i++) {
-        std::cout << i << " -> " << options[i] << std::endl;
-    }
     bool again = true;
     int input;
     while (again) {
+        std::vector<std::string> options = { "Character","Story","Arena","Tavern","Exit" };
+        std::cout << std::endl;
+        for (int i = 0; i < 5; i++) {
+            std::cout << i + 1 << " -> " << options[i] << std::endl;
+        }
         again = false;
         std::cout << "Your choice:";
         std::cin >> input;
         switch (input) {
-        case 0:
-            Character(person);
-            break;
         case 1:
-            Arena();
+            again = Character(person);
             break;
         case 2:
-            Tavern();
-            break;
-        case 3:
             Story();
             break;
+        case 3:
+            Arena();
+            break;
         case 4:
+            Tavern();
+            break;
+        case 5:
             exit(123);
             break;
         default:
@@ -118,7 +150,7 @@ int main()
 
     MyCharacter person = Intro();
 
-    
+
     Menu(person);
 
     return 0;
