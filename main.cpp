@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 
-
-
 class MyCharacter {
 public:
     std::string name;
@@ -19,7 +17,7 @@ public:
         this->level = level;
         this->statsAdded = statsAdded;
     }
-    void showStats() {
+    void showStats () {
         std::cout << std::endl;
         std::cout << "Name: " << this->name << std::endl;
         std::cout << "Level " << this->level << std::endl;
@@ -31,16 +29,15 @@ public:
         std::cout << "Defense: " << this->defense << std::endl;
         std::cout << "Luck: " << this->luck << std::endl;
     }
+
     bool AddStats() {
         bool again = true;
         int input = 0;
-        int cost = 1 * statsAdded;
-        if(gold >= cost){
+        int cost = 1 * this->statsAdded;
+        if(this->gold >= cost){
             while (again) {
-                std::cout << std::endl;
-                std::cout << "Which stat you want to increase: ";
+                std::cout << std::endl << "Which stat you want to increase: " << std::endl;;
                 std::vector<std::string> options = { "Power","Agility","Health","Defense","Luck" };
-                std::cout << std::endl;
                 for (int i = 0; i < 5; i++) {
                     std::cout << i + 1 << " -> " << options[i] << std::endl;
                 }
@@ -50,10 +47,10 @@ public:
                 switch (input)
                 {
                 case 1:
-                    power += 1;
-                    gold -= cost;
+                    this->power += 1;
+                    this->gold -= cost;
                     std::cout << "Statistics have been added" << std::endl;
-                    statsAdded++;
+                    this->statsAdded++;
                     return true;
                     break;
                 case 2:
@@ -78,6 +75,7 @@ public:
                     break;
                 }
             }
+
         }
         else
         {
@@ -121,9 +119,8 @@ MyCharacter Intro() {
     return person;
 }
 
-int Character(MyCharacter person) {
+bool Character(MyCharacter &person) {
     person.showStats();
-
     bool again = true;
     int input = 0;
     std::vector<std::string> options = { "Add stats","Back" };
@@ -165,7 +162,7 @@ void Tavern() {
 
 
 
-void Menu(MyCharacter person) {
+void Menu(MyCharacter &person) {
     bool again = true;
     int input;
     while (again) {
@@ -180,6 +177,7 @@ void Menu(MyCharacter person) {
         switch (input) {
         case 1:
             again = Character(person);
+
             break;
         case 2:
             Story();
