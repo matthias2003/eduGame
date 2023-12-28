@@ -11,9 +11,9 @@ public:
     int power, agility, health, defense, luck, gold, xp, level, statsAdded;
     MyCharacter(std::string& name, int power, int agility, int health, int defense, int luck, int gold, int xp, int level, int statsAdded);
     void showStats ();
-    bool AddStats();
+    void AddStats();
 };
 
-bool Character(MyCharacter &person);
+void Character(MyCharacter &person);
 
 #endif

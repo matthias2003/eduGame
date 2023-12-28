@@ -29,7 +29,7 @@ void MyCharacter::showStats() {
         std::cout << "Luck: " << this->luck << std::endl;
     }
 
-bool MyCharacter::AddStats() {
+void MyCharacter::AddStats() {
         bool again = true;
         int input = 0;
         int cost = 1 * this->statsAdded;
@@ -42,7 +42,6 @@ bool MyCharacter::AddStats() {
                 }
                 std::cout << "Your choice: ";
                 std::cin >> input;
-                again = false;
                 switch (input)
                 {
                     case 1:
@@ -50,7 +49,7 @@ bool MyCharacter::AddStats() {
                         this->gold -= cost;
                         std::cout << "Statistics have been added" << std::endl;
                         this->statsAdded++;
-                        return true;
+                        again = false;
                         break;
                     case 2:
                         this->agility += 1;
@@ -74,7 +73,6 @@ bool MyCharacter::AddStats() {
                         break;
                 }
             }
-
         }
         else
         {
@@ -83,7 +81,7 @@ bool MyCharacter::AddStats() {
         }
 };
 
-bool Character(MyCharacter &person) {
+void Character(MyCharacter &person) {
     person.showStats();
     bool again = true;
     int input = 0;
@@ -99,14 +97,15 @@ bool Character(MyCharacter &person) {
         switch (input)
         {
             case 1:
-                again = person.AddStats();
+                again = true;
+                person.AddStats();
                 break;
             case 2:
                 person.showStats();
                 again = true;
                 break;
             case 3:
-                return true;
+                again = false;
                 break;
             default:
                 again = true;

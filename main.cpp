@@ -17,7 +17,6 @@ MyCharacter Intro() {
     }
     std::vector<int> stats = { 1,1,1,1,1 };
     while (points > 0) {
-
         std::cout << "You have " << points << " points." << std::endl;
         std::cout << "How much points you want to spend on " << statsNames[loop] << ": ";
         std::cin >> stat;
@@ -36,8 +35,6 @@ MyCharacter Intro() {
     return person;
 }
 
-
-
 void Story() {
 
 }
@@ -49,8 +46,6 @@ void Arena() {
 void Tavern() {
 
 }
-
-
 
 void Menu(MyCharacter &person) {
     bool again = true;
@@ -66,8 +61,8 @@ void Menu(MyCharacter &person) {
         std::cin >> input;
         switch (input) {
         case 1:
-            again = Character(person);
-
+            again = true;
+            Character(person);
             break;
         case 2:
             Story();
@@ -100,6 +95,5 @@ int main()
 
 
     Menu(person);
-
     return 0;
 }
