@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "character.h"
+#include "arena.h"
 
 MyCharacter Intro() {
     std::string name;
@@ -15,7 +16,7 @@ MyCharacter Intro() {
     for (auto tmp : statsNames) {
         std::cout << tmp << std::endl;
     }
-    std::vector<int> stats = { 1,1,1,1,1 };
+    std::vector<int> stats = { 2,2,2,2,2 };
     while (points > 0) {
         std::cout << "You have " << points << " points." << std::endl;
         std::cout << "How much points you want to spend on " << statsNames[loop] << ": ";
@@ -39,10 +40,6 @@ void Story() {
 
 }
 
-void Arena() {
-
-}
-
 void Tavern() {
 
 }
@@ -56,19 +53,17 @@ void Menu(MyCharacter &person) {
         for (int i = 0; i < 5; i++) {
             std::cout << i + 1 << " -> " << options[i] << std::endl;
         }
-        again = false;
         std::cout << "Your choice:";
         std::cin >> input;
         switch (input) {
         case 1:
-            again = true;
             Character(person);
             break;
         case 2:
             Story();
             break;
         case 3:
-            Arena();
+            Arena(person);
             break;
         case 4:
             Tavern();

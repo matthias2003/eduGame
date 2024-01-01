@@ -54,18 +54,30 @@ void MyCharacter::AddStats() {
                     case 2:
                         this->agility += 1;
                         this->gold -= cost;
+                        std::cout << "Statistics have been added" << std::endl;
+                        this->statsAdded++;
+                        again = false;
                         break;
                     case 3:
                         this->health += 1;
                         this->gold -= cost;
+                        std::cout << "Statistics have been added" << std::endl;
+                        this->statsAdded++;
+                        again = false;
                         break;
                     case 4:
                         this->defense += 1;
                         this->gold -= cost;
+                        std::cout << "Statistics have been added" << std::endl;
+                        this->statsAdded++;
+                        again = false;
                         break;
                     case 5:
                         this->luck += 1;
                         this->gold -= cost;
+                        std::cout << "Statistics have been added" << std::endl;
+                        this->statsAdded++;
+                        again = false;
                         break;
                     default:
                         std::cout << "Wrong choice!" << std::endl;

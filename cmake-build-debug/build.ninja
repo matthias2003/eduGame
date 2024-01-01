@@ -61,6 +61,12 @@ build CMakeFiles/GameEdu.dir/character.cpp.obj: CXX_COMPILER__GameEdu_unscanned_
   OBJECT_DIR = CMakeFiles\GameEdu.dir
   OBJECT_FILE_DIR = CMakeFiles\GameEdu.dir
 
+build CMakeFiles/GameEdu.dir/arena.cpp.obj: CXX_COMPILER__GameEdu_unscanned_Debug D$:/Praca/Studia/GameEdu/arena.cpp || cmake_object_order_depends_target_GameEdu
+  DEP_FILE = CMakeFiles\GameEdu.dir\arena.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GameEdu.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameEdu.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GameEdu
@@ -69,7 +75,7 @@ build CMakeFiles/GameEdu.dir/character.cpp.obj: CXX_COMPILER__GameEdu_unscanned_
 #############################################
 # Link the executable GameEdu.exe
 
-build GameEdu.exe: CXX_EXECUTABLE_LINKER__GameEdu_Debug CMakeFiles/GameEdu.dir/main.cpp.obj CMakeFiles/GameEdu.dir/character.cpp.obj
+build GameEdu.exe: CXX_EXECUTABLE_LINKER__GameEdu_Debug CMakeFiles/GameEdu.dir/main.cpp.obj CMakeFiles/GameEdu.dir/character.cpp.obj CMakeFiles/GameEdu.dir/arena.cpp.obj
   FLAGS = -g
   LINK_FLAGS = -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
