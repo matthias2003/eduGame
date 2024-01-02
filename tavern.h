@@ -1,5 +1,8 @@
+#include <iostream>
 
-#ifndef GAMEEDU_TAVERN_H
-#define GAMEEDU_TAVERN_H
+#ifndef TAVERN_H
+#define TAVERN_H
 
-#endif //GAMEEDU_TAVERN_H
+void Tavern();
+
+#endif

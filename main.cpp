@@ -2,6 +2,7 @@
 #include <vector>
 #include "character.h"
 #include "arena.h"
+#include "tavern.h"
 
 MyCharacter Intro() {
     std::string name;
@@ -40,10 +41,6 @@ void Story() {
 
 }
 
-void Tavern() {
-
-}
-
 void Menu(MyCharacter &person) {
     bool again = true;
     int input;
@@ -72,7 +69,6 @@ void Menu(MyCharacter &person) {
             exit(123);
             break;
         default:
-            again = true;
             std::cout << "Wrong choice!" << std::endl;
             break;
         }
@@ -88,7 +84,7 @@ int main()
 
     MyCharacter person = Intro();
 
-
     Menu(person);
+
     return 0;
 }
