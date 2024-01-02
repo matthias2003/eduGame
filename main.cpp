@@ -53,7 +53,7 @@ void Menu(MyCharacter &person) {
         for (int i = 0; i < 5; i++) {
             std::cout << i + 1 << " -> " << options[i] << std::endl;
         }
-        std::cout << "Your choice:";
+        std::cout << "Your choice: ";
         std::cin >> input;
         switch (input) {
         case 1:

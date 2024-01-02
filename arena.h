@@ -7,5 +7,6 @@
 
 void Arena(MyCharacter &person);
 std::vector <int> RandomOpponentStats(MyCharacter person);
+void questionHandler();
 
 #endif

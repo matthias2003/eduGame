@@ -1,0 +1,5 @@
+
+#ifndef GAMEEDU_TAVERN_H
+#define GAMEEDU_TAVERN_H
+
+#endif //GAMEEDU_TAVERN_H
