@@ -6,7 +6,7 @@
 #define ARENA_H
 
 void Arena(MyCharacter &person);
-std::vector <int> RandomOpponentStats(MyCharacter person);
+std::vector <double> RandomOpponentStats(MyCharacter person);
 void questionHandler();
 
 #endif

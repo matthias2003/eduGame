@@ -2,7 +2,7 @@
 #include <vector>
 #include "character.h"
 
-MyCharacter::MyCharacter(std::string& name, int power, int agility, int health, int defense, int luck, int gold, int xp, int level, int statsAdded) {
+MyCharacter::MyCharacter(std::string& name, double power, double agility, double health, double defense, double luck, double gold, double xp, double level, double statsAdded) {
     this->name = name;
     this->power = power;
     this->agility = agility;
@@ -32,7 +32,7 @@ void MyCharacter::showStats() {
 void MyCharacter::AddStats() {
         bool again = true;
         int input = 0;
-        int cost = 1 * this->statsAdded;
+        double cost = 1 * this->statsAdded;
         if(this->gold >= cost){
             while (again) {
                 std::cout << std::endl << "Which stat you want to increase: " << std::endl;;
