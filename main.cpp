@@ -17,7 +17,7 @@ MyCharacter Intro() {
     for (auto tmp : statsNames) {
         std::cout << tmp << std::endl;
     }
-    std::vector<int> stats = { 2,2,2,2,2 };
+    std::vector<int> stats = { 1,1,1,1,1 };
     while (points > 0) {
         std::cout << "You have " << points << " points." << std::endl;
         std::cout << "How much points you want to spend on " << statsNames[loop] << ": ";
@@ -41,7 +41,7 @@ void Story() {
 
 }
 
-void Menu(MyCharacter &person) {
+void Menu(MyCharacter& person) {
     bool again = true;
     int input;
     while (again) {
