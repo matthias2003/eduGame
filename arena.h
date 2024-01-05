@@ -7,6 +7,6 @@
 
 void Arena(MyCharacter &person);
 std::vector <double> RandomOpponentStats(MyCharacter person);
-void questionHandler();
+std::pair<bool,bool> questionHandler();
 
 #endif

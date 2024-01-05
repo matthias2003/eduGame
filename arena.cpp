@@ -2,7 +2,7 @@
 #include <vector>
 #include "arena.h"
 #include <random>
-#include <fstream>
+#include "question.h"
 
 void Arena(MyCharacter& person) {
     std::cout << "Welcome in Arena! Face your opponent! His level is: " << person.level << std::endl;
@@ -73,21 +73,36 @@ void Arena(MyCharacter& person) {
         }
     }
 
+
     if (personHealth > opponentHealth || personHealth == opponentHealth) {
+
         person.xp += 2;
         if (person.xp > person.level) {
             person.xp = person.xp - person.level;
             person.level += 1;
         }
-        person.gold += 1;
         std::cout
-            << "You've won! If you answer my question correct you can gain \n additional gold, but if you are wrong, you will loose \n"
+            << "You've won! If you answer my question correct you can gain 2 \n gold instead of 1, but if you are wrong, you will loose \n"
             "earnings for this fight! Your call!" << std::endl;
-        questionHandler();
+        std::pair<bool,bool> flags = questionHandler();
+        if (flags.first) {
+            if (flags.second) {
+                person.gold += 2;
+            }
+        } else {
+            person.gold += 1;
+        }
     }
     else {
-        std::cout << "You've lost! It will cost you gold, unless you answer my question! Are you ready? "; // zrobić te pytania w tym miejscu i będzie skończona arena
-        questionHandler();
+        std::cout << "You've lost! It will cost you 1 gold, unless you answer my question! Are you ready? " << std::endl;
+        std::pair<bool,bool> flags = questionHandler();
+        if (flags.first) {
+            if (flags.second) {
+                person.gold += 0;
+            }
+        } else {
+            person.gold -= 1;
+        }
     }
 }
 
@@ -134,10 +149,12 @@ std::vector <double> RandomOpponentStats(MyCharacter person) {
     return data;
 }
 
-void questionHandler() {
+std::pair<bool,bool> questionHandler() {
     std::vector<std::string> options = { "Yes", "No" };
     int input;
     bool again = true;
+    bool isCorrect;
+    bool takeOffer;
     while (again) {
         for (int i = 0; i < 2; i++) {
             std::cout << i + 1 << " -> " << options[i] << std::endl;
@@ -145,17 +162,21 @@ void questionHandler() {
         std::cout << "Your choice: ";
         std::cin >> input;
         switch (input) {
-        case 1:
-            std::cout << "QUESTION HERE!";
-            again = false;
-            break;
-        case 2:
-            again = false;
-            break;
-        default:
-            again = true;
-            std::cout << "Wrong choice!" << std::endl;
-            break;
+            case 1:
+                isCorrect = getQuestion();
+                takeOffer = true;
+                again = false;
+                break;
+            case 2:
+                isCorrect = false;
+                takeOffer = false;
+                again = false;
+                break;
+            default:
+                again = true;
+                std::cout << "Wrong choice!" << std::endl;
+                break;
         }
     }
+    return std::make_pair(takeOffer,isCorrect);
 }
