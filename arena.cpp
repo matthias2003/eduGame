@@ -2,6 +2,7 @@
 #include <vector>
 #include "arena.h"
 #include <random>
+#include <fstream>
 
 void Arena(MyCharacter& person) {
     std::cout << "Welcome in Arena! Face your opponent! His level is: " << person.level << std::endl;

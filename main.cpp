@@ -3,6 +3,7 @@
 #include "character.h"
 #include "arena.h"
 #include "tavern.h"
+#include "question.h"
 
 MyCharacter Intro() {
     std::string name;
@@ -77,12 +78,15 @@ void Menu(MyCharacter& person) {
 
 int main()
 {
+    questionDataHandler();
     for (int i = 0; i < 10; i++) std::cout << std::endl;
     for (int i = 0; i < 50; i++) std::cout << " ";
     std::cout << "Welcome in Edu RPG!";
     for (int i = 0; i < 10; i++) std::cout << std::endl;
 
     MyCharacter person = Intro();
+
+
 
     Menu(person);
 

@@ -1,0 +1,350 @@
+1. Mathematics:
+   What is the value of π (pi)?
+     A) 3.14
+     B) 2.71
+     C) 1.62
+     D) 4.20
+     Correct Answer: A
+2. Biology:
+   What is the powerhouse of the cell?
+     A) Nucleus
+     B) Mitochondria
+     C) Chloroplast
+     D) Ribosome
+     Correct Answer: B
+3. History:
+   In which year did Christopher Columbus reach the Americas?
+     A) 1492
+     B) 1588
+     C) 1620
+     D) 1776
+     Correct Answer: A
+4. Physics:
+   What is the SI unit of force?
+     A) Watt
+     B) Joule
+     C) Newton
+     D) Pascal
+     Correct Answer: C
+5. Geography:
+   Which is the longest river in the world?
+     A) Amazon
+     B) Nile
+     C) Yangtze
+     D) Mississippi
+     Correct Answer: B
+6. Literature:
+   Who wrote the play "Romeo and Juliet"?
+     A) William Shakespeare
+     B) Jane Austen
+     C) Charles Dickens
+     D) Mark Twain
+     Correct Answer: A
+7. Chemistry:
+   What is the chemical symbol for gold?
+     A) Gd
+     B) Au
+     C) Ag
+     D) Fe
+     Correct Answer: B
+8. General Knowledge:
+   Which planet is known as the "Red Planet"?
+     A) Venus
+     B) Mars
+     C) Jupiter
+     D) Saturn
+     Correct Answer: B
+9. Economics:
+   What does GDP stand for?
+     A) General Domestic Product
+     B) Gross Domestic Product
+     C) Global Development Process
+     D) General Development Protocol
+     Correct Answer: B
+10. Political Science:
+    What is the term for a system of government where the power is held by the people, either directly or through elected representatives?
+      A) Monarchy
+      B) Oligarchy
+      C) Democracy
+      D) Autocracy
+      Correct Answer: C
+11. Computer Science:
+    Which programming language is known for its use in web development and is often associated with front-end development?
+      A) Java
+      B) Python
+      C) HTML
+      D) C++
+      Correct Answer: C
+12. Art:
+    Who painted the Mona Lisa?
+      A) Vincent van Gogh
+      B) Pablo Picasso
+      C) Leonardo da Vinci
+      D) Claude Monet
+      Correct Answer: C
+13. Environmental Science:
+    What is the primary gas responsible for the greenhouse effect on Earth?
+      A) Oxygen
+      B) Nitrogen
+      C) Carbon Dioxide
+      D) Methane
+      Correct Answer: C
+14. Psychology:
+    According to Maslow's hierarchy of needs, which needs are considered the most basic and fundamental?
+      A) Self-esteem needs
+      B) Safety needs
+      C) Physiological needs
+      D) Love and belongingness needs
+      Correct Answer: C
+15. Astronomy:
+    What is the name of the largest moon of Jupiter?
+      A) Europa
+      B) Ganymede
+      C) Io
+      D) Callisto
+      Correct Answer: B
+16. Medicine:
+    What is the function of the pancreas in the human body?
+      A) Produces insulin
+      B) Filters blood
+      C) Digests food
+      D) Pumps blood
+      Correct Answer: A
+17. Sociology:
+    Who coined the term "sociology"?
+      A) Karl Marx
+      B) Auguste Comte
+      C) Max Weber
+      D) Emile Durkheim
+      Correct Answer: B
+18. Physics:
+    What is the speed of light in a vacuum?
+      A) 299,792 kilometers per second
+      B) 150,000 miles per second
+      C) 1,000,000 kilometers per second
+      D) 500,000 miles per second
+      Correct Answer: A
+19. History:
+    Which ancient civilization built the pyramids in Giza?
+      A) Roman
+      B) Greek
+      C) Egyptian
+      D) Mesopotamian
+      Correct Answer: C
+20. Geography:
+    What is the capital city of Australia?
+      A) Sydney
+      B) Canberra
+      C) Melbourne
+      D) Brisbane
+      Correct Answer: B
+21. Literature:
+    Who wrote the famous play "Hamlet"?
+      A) Jane Austen
+      B) William Shakespeare
+      C) Charles Dickens
+      D) F. Scott Fitzgerald
+      Correct Answer: B
+22. Chemistry:
+    What is the chemical symbol for water?
+      A) O
+      B) H2O
+      C) W
+      D) H2
+      Correct Answer: B
+23. General Knowledge:
+    What is the capital city of Japan?
+      A) Seoul
+      B) Beijing
+      C) Tokyo
+      D) Bangkok
+      Correct Answer: C
+24. Economics:
+    Who is often regarded as the father of modern economics?
+      A) Adam Smith
+      B) John Maynard Keynes
+      C) Karl Marx
+      D) Milton Friedman
+      Correct Answer: A
+25. Political Science:
+    What is the term for a government ruled by a single individual with absolute power?
+      A) Democracy
+      B) Monarchy
+      C) Oligarchy
+      D) Autocracy
+      Correct Answer: D
+26. Computer Science:
+    Which operating system is developed by Apple Inc.?
+      A) Windows
+      B) Linux
+      C) macOS
+      D) Android
+      Correct Answer: C
+27. Art:
+    Who is known for painting "The Starry Night"?
+      A) Vincent van Gogh
+      B) Pablo Picasso
+      C) Leonardo da Vinci
+      D) Claude Monet
+      Correct Answer: A
+28. Environmental Science:
+    Which gas is responsible for the depletion of the ozone layer?
+      A) Carbon Dioxide
+      B) Methane
+      C) Chlorofluorocarbons (CFCs)
+      D) Nitrous Oxide
+      Correct Answer: C
+29. Psychology:
+    Who is known for the concept of classical conditioning in psychology?
+      A) B.F. Skinner
+      B) Sigmund Freud
+      C) Ivan Pavlov
+      D) Carl Rogers
+      Correct Answer: C
+30. Astronomy:
+    What is the name of the closest galaxy to the Milky Way?
+      A) Andromeda
+      B) Triangulum
+      C) Whirlpool
+      D) Sombrero
+      Correct Answer: A
+31. Medicine:
+    Which organ is primarily responsible for detoxifying the blood in the human body?
+      A) Liver
+      B) Kidneys
+      C) Lungs
+      D) Heart
+      Correct Answer: A
+32. Sociology:
+    Who introduced the concept of the "looking glass self" in sociology?
+      A) Max Weber
+      B) Erving Goffman
+      C) Charles Horton Cooley
+      D) Karl Marx
+      Correct Answer: C
+33. Physics:
+    What is the law of conservation of energy?
+      A) Energy can be created but not destroyed
+      B) Energy cannot be created nor destroyed, only transferred or converted
+      C) Energy can be destroyed but not created
+      D) Energy is constant in the universe
+      Correct Answer: B
+34. History:
+    Who was the first President of the United States?
+      A) John Adams
+      B) Thomas Jefferson
+      C) George Washington
+      D) James Madison
+      Correct Answer: C
+35. Geography:
+    Which mountain range separates Europe and Asia?
+      A) Andes
+      B) Rockies
+      C) Alps
+      D) Ural
+      Correct Answer: D
+36. Literature:
+    In "To Kill a Mockingbird," who is the author?
+      A) F. Scott Fitzgerald
+      B) Ernest Hemingway
+      C) Harper Lee
+      D) J.K. Rowling
+      Correct Answer: C
+37. Chemistry:
+    What is the chemical symbol for iron?
+      A) Ir
+      B) Fe
+      C) Au
+      D) Ag
+      Correct Answer: B
+38. General Knowledge:
+    What is the currency of Brazil?
+      A) Peso
+      B) Real
+      C) Euro
+      D) Yen
+      Correct Answer: B
+39. Economics:
+    What does the term "inflation" refer to in economics?
+      A) Increase in the supply of money
+      B) Decrease in the overall price level of goods and services
+      C) Increase in the overall price level of goods and services
+      D) Decrease in the demand for goods and services
+      Correct Answer: C
+40. Political Science:
+    What is the primary function of the United Nations?
+      A) Economic development
+      B) International peace and security
+      C) Cultural exchange
+      D) Space exploration
+      Correct Answer: B
+41. Computer Science:
+    Which programming language is often used for artificial intelligence and machine learning?
+      A) Java
+      B) Python
+      C) C++
+      D) Ruby
+      Correct Answer: B
+42. Art:
+    Who painted "The Persistence of Memory," featuring melting clocks?
+      A) Salvador Dali
+      B) Pablo Picasso
+      C) Vincent van Gogh
+      D) Claude Monet
+      Correct Answer: A
+43. Environmental Science:
+    Which gas is responsible for the acidification of oceans?
+      A) Carbon Dioxide
+      B) Sulfur Dioxide
+      C) Nitrogen Oxide
+      D) Methane
+      Correct Answer: A
+44. Psychology:
+    Who developed the theory of multiple intelligences, which includes musical, bodily-kinesthetic, and interpersonal intelligences?
+      A) Sigmund Freud
+      B) Howard Gardner
+      C) B.F. Skinner
+      D) Erik Erikson
+      Correct Answer: B
+45. Astronomy:
+    What is the name of the largest planet in our solar system?
+      A) Mars
+      B) Jupiter
+      C) Saturn
+      D) Neptune
+      Correct Answer: B
+46. Medicine:
+    Which vitamin is essential for proper blood clotting?
+      A) Vitamin A
+      B) Vitamin C
+      C) Vitamin D
+      D) Vitamin K
+      Correct Answer: D
+47. Sociology:
+    Who is known for the theory of social stratification based on class, status, and power?
+      A) Max Weber
+      B) Karl Marx
+      C) Emile Durkheim
+      D) Auguste Comte
+      Correct Answer: A
+48. Physics:
+    What is the unit of electrical resistance?
+      A) Volt
+      B) Ampere
+      C) Ohm
+      D) Watt
+      Correct Answer: C
+49. History:
+    Who was the Queen of Egypt known for her relationship with Mark Antony and Julius Caesar?
+      A) Cleopatra
+      B) Nefertiti
+      C) Hatshepsut
+      D) Ramses II
+      Correct Answer: A
+50. Geography:
+    Which country is known as the "Land of the Rising Sun"?
+      A) China
+      B) Japan
+      C) South Korea
+      D) Vietnam
+      Correct Answer: B

@@ -9,6 +9,8 @@ add_executable(GameEdu main.cpp
         arena.h
         arena.cpp
         tavern.cpp
-        tavern.h)
+        tavern.h
+        question.h
+        question.cpp)
 
 set(CMAKE_EXE_LINKER_FLAGS "-static")
