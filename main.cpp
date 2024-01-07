@@ -4,6 +4,7 @@
 #include "arena.h"
 #include "tavern.h"
 #include "question.h"
+#include "story.h"
 
 MyCharacter Intro() {
     std::string name;
@@ -38,10 +39,6 @@ MyCharacter Intro() {
     return person;
 }
 
-void Story() {
-
-}
-
 void Menu(MyCharacter& person) {
     bool again = true;
     int input;
@@ -58,7 +55,7 @@ void Menu(MyCharacter& person) {
             Character(person);
             break;
         case 2:
-            Story();
+            Story(person);
             break;
         case 3:
             Arena(person);
@@ -83,11 +80,7 @@ int main()
     for (int i = 0; i < 50; i++) std::cout << " ";
     std::cout << "Welcome in Edu RPG!";
     for (int i = 0; i < 10; i++) std::cout << std::endl;
-
     MyCharacter person = Intro();
-
-
-
     Menu(person);
 
     return 0;
