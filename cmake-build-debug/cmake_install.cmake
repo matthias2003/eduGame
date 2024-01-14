@@ -1,4 +1,4 @@
-# Install script for directory: D:/Praca/Studia/GameEdu
+# Install script for directory: H:/app/eduGame
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Praca/Studia/GameEdu/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "H:/app/eduGame/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -10,7 +10,7 @@ void Arena(MyCharacter& person) {
     std::string name = "Opponent";
 
     std::vector<double> data = RandomOpponentStats(person);
-    MyCharacter opponent = MyCharacter(name, data[0], data[1], data[2], data[3], data[4], 0, 0, person.level, 0);
+    MyCharacter opponent = MyCharacter(name, data[0], data[1], data[2], data[3], 0, 0, person.level, 0);
 
     double opponentHealth = opponent.health * 5;
     double personHealth = person.health * 5;
@@ -28,11 +28,6 @@ void Arena(MyCharacter& person) {
     double personLuck = person.luck / (person.level * 5);
     if (personLuck > 0.5) personLuck = 0.5;
 
-    double opponentAgility = opponent.agility / (opponent.level * 5);
-    if (opponentAgility > 0.5) opponentAgility = 0.5;
-    double personAgility = person.agility / (person.level * 5);
-    if (personAgility > 0.5) personAgility = 0.5;
-
     int personCrit;
     int opponentCrit;
 
@@ -44,7 +39,7 @@ void Arena(MyCharacter& person) {
         std::random_device rd;
         std::mt19937 generator(rd());
         std::uniform_int_distribution<int> distribution(1, 100);
-        
+
         personCrit = distribution(generator);
         opponentCrit = distribution(generator);
 
@@ -82,25 +77,27 @@ void Arena(MyCharacter& person) {
             person.level += 1;
         }
         std::cout
-            << "You've won! If you answer my question correct you can gain 2 \n gold instead of 1, but if you are wrong, you will loose \n"
-            "earnings for this fight! Your call!" << std::endl;
-        std::pair<bool,bool> flags = questionHandler();
+                << "You've won! If you answer my question correct you can gain 2 \n gold instead of 1, but if you are wrong, you will loose \n"
+                   "earnings for this fight! Your call!" << std::endl;
+        std::pair<bool, bool> flags = questionHandler();
         if (flags.first) {
             if (flags.second) {
                 person.gold += 2;
             }
-        } else {
+        }
+        else {
             person.gold += 1;
         }
     }
     else {
         std::cout << "You've lost! It will cost you 1 gold, unless you answer my question! Are you ready? " << std::endl;
-        std::pair<bool,bool> flags = questionHandler();
+        std::pair<bool, bool> flags = questionHandler();
         if (flags.first) {
             if (flags.second) {
                 person.gold += 0;
             }
-        } else {
+        }
+        else {
             person.gold -= 1;
         }
     }
@@ -113,22 +110,17 @@ std::vector <double> RandomOpponentStats(MyCharacter person) {
     std::uniform_int_distribution<int> distribution(-1, 1);
 
     double power = distribution(generator);
-    double agility = distribution(generator);
     double health = distribution(generator);
     double defense = distribution(generator);
     double luck = distribution(generator);
 
     power = power + person.power;
-    agility = agility + person.agility;
     health = health + person.health;
     defense = defense + person.defense;
     luck = luck + person.luck;
 
     if (power <= 0) {
         power = 1;
-    }
-    if (agility <= 0) {
-        agility = 1;
     }
     if (health <= 0) {
         health = 1;
@@ -141,7 +133,6 @@ std::vector <double> RandomOpponentStats(MyCharacter person) {
     }
 
     data.push_back(power);
-    data.push_back(agility);
     data.push_back(health);
     data.push_back(defense);
     data.push_back(luck);
@@ -149,7 +140,7 @@ std::vector <double> RandomOpponentStats(MyCharacter person) {
     return data;
 }
 
-std::pair<bool,bool> questionHandler() {
+std::pair<bool, bool> questionHandler() {
     std::vector<std::string> options = { "Yes", "No" };
     int input;
     bool again = true;
@@ -178,5 +169,5 @@ std::pair<bool,bool> questionHandler() {
                 break;
         }
     }
-    return std::make_pair(takeOffer,isCorrect);
+    return std::make_pair(takeOffer, isCorrect);
 }
